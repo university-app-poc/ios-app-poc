@@ -16,6 +16,8 @@
 		2A86E5F12A5CC8CF00CF9979 /* university_app_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A86E5F02A5CC8CF00CF9979 /* university_app_pocTests.swift */; };
 		2A86E5FB2A5CC8CF00CF9979 /* university_app_pocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A86E5FA2A5CC8CF00CF9979 /* university_app_pocUITests.swift */; };
 		2A86E5FD2A5CC8CF00CF9979 /* university_app_pocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A86E5FC2A5CC8CF00CF9979 /* university_app_pocUITestsLaunchTests.swift */; };
+		2A86E60C2A5CD31600CF9979 /* UniversityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A86E60B2A5CD31600CF9979 /* UniversityListView.swift */; };
+		2A86E60E2A5CDA3600CF9979 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A86E60D2A5CDA3600CF9979 /* CourseListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		2A86E5F62A5CC8CF00CF9979 /* university-app-pocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "university-app-pocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A86E5FA2A5CC8CF00CF9979 /* university_app_pocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = university_app_pocUITests.swift; sourceTree = "<group>"; };
 		2A86E5FC2A5CC8CF00CF9979 /* university_app_pocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = university_app_pocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A86E60B2A5CD31600CF9979 /* UniversityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListView.swift; sourceTree = "<group>"; };
+		2A86E60D2A5CDA3600CF9979 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			children = (
 				2A86E5DA2A5CC8CD00CF9979 /* university_app_pocApp.swift */,
 				2A86E5DC2A5CC8CD00CF9979 /* ContentView.swift */,
+				2A86E60D2A5CDA3600CF9979 /* CourseListView.swift */,
+				2A86E60B2A5CD31600CF9979 /* UniversityListView.swift */,
 				2A86E5DE2A5CC8CF00CF9979 /* Assets.xcassets */,
 				2A86E5E32A5CC8CF00CF9979 /* Persistence.swift */,
 				2A86E5E52A5CC8CF00CF9979 /* university_app_poc.xcdatamodeld */,
@@ -264,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A86E5E42A5CC8CF00CF9979 /* Persistence.swift in Sources */,
+				2A86E60C2A5CD31600CF9979 /* UniversityListView.swift in Sources */,
+				2A86E60E2A5CDA3600CF9979 /* CourseListView.swift in Sources */,
 				2A86E5DD2A5CC8CD00CF9979 /* ContentView.swift in Sources */,
 				2A86E5E72A5CC8CF00CF9979 /* university_app_poc.xcdatamodeld in Sources */,
 				2A86E5DB2A5CC8CD00CF9979 /* university_app_pocApp.swift in Sources */,
