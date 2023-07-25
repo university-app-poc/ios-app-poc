@@ -12,39 +12,33 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @State public var selectedTab = 0
-    private var singleTabWidth = UIScreen.main.bounds.width / 5
+    let persistenceController = PersistenceController.shared
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            UniversityListView()
+            SearchView()
                 .tabItem {
                     VStack{
-                        Image(systemName: "house.lodge.circle")
+                        Image(systemName: "magnifyingglass")
                         Text("Search")
                     }
                 }
-            
-            CourseListView()
-                .tabItem {
-                    VStack{
-                        Image(systemName: "book.closed.fill")
-                        Text("Courses").bold()
-                    }
-                }
-            // SavedCoursesListView()
-            Text("")
+            SavesView()
                 .tabItem {
                     VStack{
                         Image(systemName: "books.vertical.fill")
                         Text("Saved Courses")
                     }
                 }
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
+            .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
     }
 }
